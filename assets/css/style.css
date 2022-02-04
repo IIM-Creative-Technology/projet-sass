@@ -1,9 +1,9 @@
 /* Error: Can't find stylesheet to import.
- *   ,
- * 7 |   'base/typography';
- *   |   ^^^^^^^^^^^^^^^^^
- *   '
- *   scss/style.scss 7:3  root stylesheet */
+ *    ,
+ * 10 |   'layout/navigation',
+ *    |   ^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss/style.scss 10:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 7 \2502    'base/typography';\a   \2502    ^^^^^^^^^^^^^^^^^\a   \2575 \a   scss/style.scss 7:3  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502    'layout/navigation',\a    \2502    ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/style.scss 10:3  root stylesheet";
 }
