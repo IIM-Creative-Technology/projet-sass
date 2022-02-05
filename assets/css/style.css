@@ -1,3 +1,15 @@
-
+.explanation .about_pic {
+  text-align: center;
+}
+.explanation .button_about1 img {
+  position: relative;
+  left: 30%;
+  top: 88px;
+}
+.explanation .button_about2 img {
+  position: relative;
+  left: 60%;
+  bottom: 4px;
+}
 
 /*# sourceMappingURL=style.css.map */
