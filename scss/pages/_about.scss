@@ -2,12 +2,10 @@
   position: relative;
   height: 85vh;
   .card1 {
-    width: 25%;
-    left: -300px;
+      @include cta-card(60%,-300px,25%,20);
   }
   .card2 {
-    left: 45%;
-    width: 30%;
+    @include cta-card(0,45%,35%,20);
   }
 
   .about_pic {
@@ -16,7 +14,7 @@
 
   .button_about1 {
     img {
-      position: absolute;
+     position: absolute;
       left: 30%;
       top: 10%;
     }
