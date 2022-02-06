@@ -1,8 +1,5 @@
-.card{
-    @include card-font(18px, $OpenSans,$regular);
-    @include card-opacity(0);
-    @include card-padding(30px, 30px);
-    @include card-position(absolute);
-    @include card-shadow(8px, 8px, 60px);
-    background-color: $bodyBgColor;
+
+.card {
+  @include card-default(35px, 25px, 8px, 8px, 60px);
+  @include card-font($regular);
 }

@@ -2,23 +2,30 @@
   opacity: $value;
 }
 
-@mixin card-font($fontSize, $fontFamily, $fontWeight) {
-  font-size: $fontSize;
+@mixin card-font($fontWeight) {
+  font-size: $content;
+  font-family: $OpenSans;
   font-weight: $fontWeight;
-  font-family: $fontFamily;
 }
 
-@mixin card-padding($topBottom, $leftRight) {
+@mixin card-default($topBottom, $leftRight, $x, $y, $blur) {
+  background-color: white;
   padding: $topBottom $leftRight;
-}
-
-@mixin card-position($pValue) {
-  position: $pValue;
-}
-
-@mixin card-shadow($x, $y, $blur) {
   box-shadow: $x $y $blur $mainShadowColor;
 }
+
+@mixin cta-card($bottom, $left, $width, $index) {
+  width: $width;
+  position: absolute;
+  @include card-opacity(0);
+  bottom: $bottom;
+  left: $left;
+  transition: transform .3s ease-out;
+  z-index: $index;
+}
+
+
+
 
 @mixin card-translate($x, $y) {
   @include card-opacity(1);

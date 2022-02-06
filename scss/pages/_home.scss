@@ -1,6 +1,4 @@
 body{
-  font-size: $content;
-  font-family: $OpenSans;
 
   img{
     width: 100%;
@@ -30,9 +28,6 @@ body{
     height: auto;
 
     .contents{  
-
-  
-
       .downloadLinks{
 
         width: 300px;
@@ -107,19 +102,12 @@ body{
       }
     }
     .card{
-      position: absolute;
-      bottom: 0vh; 
-      width: 400px;
-      left: -600px;
-      z-index: 20;
-      background-color: white;
-      opacity: 0;
-      transition: transform .3s ease-out;
+      @include cta-card(0px, -1000px, 400px, 20);
     }
 
     &:hover .card{
       opacity: 1;
-      transform: translate(200px, 0px);
+      transform: translate(800px, 0px);
     }
   }
 }
