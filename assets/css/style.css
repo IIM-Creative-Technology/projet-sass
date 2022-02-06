@@ -9,6 +9,7 @@
   padding: 30px 30px;
   position: absolute;
   box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
+  background-color: #fff;
 }
 
 .explanation {
@@ -31,7 +32,7 @@
 .explanation .button_about1 img {
   position: absolute;
   left: 30%;
-  top: 30%;
+  top: 10%;
 }
 .explanation .button_about2 img {
   position: absolute;
@@ -48,6 +49,30 @@
 .explanation .button_about_right:hover .card2 {
   opacity: 1;
   transform: translate(0, -90px);
+}
+
+.zen-health {
+  height: 105vh;
+}
+.zen-health .health_pic {
+  text-align: center;
+}
+.zen-health .button_health img {
+  position: absolute;
+  left: 56%;
+  bottom: -390px;
+}
+.zen-health .card_health {
+  width: 30%;
+  top: 150%;
+  transition: transform 0.3s ease-out;
+}
+.zen-health .health:hover .button_health {
+  visibility: hidden;
+}
+.zen-health .health:hover .card_health {
+  opacity: 1;
+  transform: translate(400px, 0);
 }
 
 /*# sourceMappingURL=style.css.map */
