@@ -1,23 +1,15 @@
-body{
-
-  img{
-    width: 100%;
-    height: auto;
-  }
-}
-
 .zen_inro {
   display: grid;
   grid-template-columns: minmax(100px, auto) 1fr;
   grid-template-rows: 0.3fr 1fr;
-  @include gap(0px, 5px,);
+  @include gap(0px, 5px);
   grid-template-areas:
     'title Img'
     'intro Img';
 
   .title {
     grid-area: title;
-    h1{
+    h1 {
       margin-left: 4%;
       @include main-title($Amaranth, 8px, 8px, 60px);
     }
@@ -27,58 +19,55 @@ body{
     width: 600px;
     height: auto;
 
-    .contents{  
-      .downloadLinks{
-
+    .contents {
+      .downloadLinks {
         width: 300px;
         display: flex;
         justify-content: space-between;
-        a{
+        a {
           text-decoration: none;
           color: $LinkColor;
           text-transform: uppercase;
           font-family: $OpenSans;
           font-weight: $semiBold;
           font-size: $content;
-  
-        &:hover{
-          color: $LinkHoverColor;
-        }
-  
-          i{
+
+          &:hover {
+            color: $LinkHoverColor;
+          }
+
+          i {
             margin-left: 10px;
           }
         }
       }
     }
-    
   }
-  
+
   .Img {
     grid-area: Img;
   }
 }
 
-.zen-preamble{
-  .Img{
+.zen-preamble {
+  .Img {
     width: 600px;
     margin: auto;
     text-align: center;
     z-index: 1;
   }
 
-  .cta{
-
+  .cta {
     position: absolute;
     bottom: 20vh;
     left: 25vw;
 
-    .ctaButton{
+    .ctaButton {
       circle {
         stroke-width: 2px;
         stroke-opacity: 1;
       }
-      
+
       .pulse {
         fill: white;
         fill-opacity: 0;
@@ -87,7 +76,7 @@ body{
         animation-name: pulse;
         animation-iteration-count: infinite;
       }
-      
+
       @keyframes pulse {
         from {
           stroke-width: 3px;
@@ -101,14 +90,13 @@ body{
         }
       }
     }
-    .card{
+    .card {
       @include cta-card(0px, -1000px, 400px, 20);
     }
 
-    &:hover .card{
+    &:hover .card {
       opacity: 1;
       transform: translate(800px, 0px);
     }
   }
 }
-

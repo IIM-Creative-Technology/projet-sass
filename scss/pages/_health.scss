@@ -1,25 +1,19 @@
-.zen-health{
-    height: 105vh;
-    .health_pic {
-        text-align: center;
-    }
-    .button_health{
-        img{
-            position: absolute;
-            left: 56%;
-            bottom: -120%;
-       }
-    }
-    .card_health{
-       width: 30%;
-       top: 200%;
-       @include card-transition;
-    }
+.zen-health {
+  .health_pic {
+    text-align: center;
+    width: 100%;
+  }
+  .button_health {
+    position: absolute;
+    left: 56%;
+    top: 50%;
+  }
 
-    .health:hover .button_health{
-        visibility: hidden;
-    }
-    .health:hover .card_health{
-        @include card-translate(400px,0)
-    }
+  .card {
+    @include cta-card(-100px, -100vw, 500px, 20);
+  }
+
+  .button_health:hover .card_health {
+    @include card-translate(100vw, 0);
+  }
 }

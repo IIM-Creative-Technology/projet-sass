@@ -20,12 +20,9 @@
   @include card-opacity(0);
   bottom: $bottom;
   left: $left;
-  transition: transform .3s ease-out;
+  transition: transform 0.3s ease-out;
   z-index: $index;
 }
-
-
-
 
 @mixin card-translate($x, $y) {
   @include card-opacity(1);
@@ -41,8 +38,8 @@
   @include card-shadow(10px, 8px);
 }
 
-@mixin section($sectionHeight, $sectionPosition ) {
-  height : $sectionHeight;
+@mixin section($sectionHeight, $sectionPosition) {
+  height: $sectionHeight;
   position: $sectionPosition;
 }
 
@@ -51,7 +48,4 @@
   font-size: $title;
   color: $titleColor;
   text-shadow: $x $y $blur $textSadowColor;
-}
-@mixin card-transition {
-    transition: transform .3s ease-out;
 }

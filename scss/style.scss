@@ -1,19 +1,9 @@
-   @import
-  'abstracts/colors.scss',
-  'abstracts/variables',
-  'abstracts/mixins';
+@import 'abstracts/colors.scss', 'abstracts/variables', 'abstracts/mixins';
 
-
-  @import
-  'base/reset',
-  'base/typo';
+@import 'base/reset', 'base/typo';
 
 @import 'layout/navigation', 'layout/grid', 'layout/header', 'layout/footer';
 
-  @import
-  'components/buttons',
-  'components/card';
+@import 'components/buttons', 'components/card', 'components/section';
 
-  @import
-  'pages/about',
-  'pages/health';
+@import 'pages/about', 'pages/health', 'pages/home';
