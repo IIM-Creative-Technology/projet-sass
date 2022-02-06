@@ -1,7 +1,8 @@
    @import
+  'abstracts/colors.scss',
   'abstracts/variables',
   'abstracts/mixins';
-  @import 'abstracts/_colors.scss';
+
 
   @import
   'base/reset',

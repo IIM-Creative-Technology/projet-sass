@@ -1,27 +1,53 @@
 /*text color*/
 /*background color*/
 /* Shadows colors*/
-.explanation .card1 {
+.card {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0;
+  padding: 30px 30px;
+  position: absolute;
   box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
-  width: 30%;
+}
+
+.explanation {
+  position: relative;
+  height: 85vh;
+}
+.explanation .card1 {
+  width: 25%;
+  left: -300px;
+  transition: transform 0.3s ease-out;
 }
 .explanation .card2 {
-  box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
-  width: 35%;
-  bottom: 385px;
+  left: 45%;
+  width: 30%;
+  transition: transform 0.3s ease-out;
 }
 .explanation .about_pic {
   text-align: center;
 }
 .explanation .button_about1 img {
-  position: relative;
+  position: absolute;
   left: 30%;
-  top: 88px;
+  top: 30%;
 }
 .explanation .button_about2 img {
-  position: relative;
+  position: absolute;
   left: 60%;
-  bottom: 4px;
+  top: 310px;
+}
+.explanation .button_about_left:hover .card1 {
+  opacity: 1;
+  transform: translate(410px, 0);
+}
+.explanation .button_about_left:hover .button_about1, .explanation .button_about_right:hover .button_about2 {
+  visibility: hidden;
+}
+.explanation .button_about_right:hover .card2 {
+  opacity: 1;
+  transform: translate(0, -90px);
 }
 
 /*# sourceMappingURL=style.css.map */

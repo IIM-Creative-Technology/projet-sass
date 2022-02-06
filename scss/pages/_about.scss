@@ -1,30 +1,46 @@
 .explanation{
+    position: relative;
+    height: 85vh;
     .card1{
-        box-shadow:  8px 8px 60px $mainShadowColor;
-        width: 30%;
+        width: 25%;
+        left: -300px;
+        @include card-transition;
     }
     .card2{
-        box-shadow:  8px 8px 60px $mainShadowColor;
-        width: 35%;
-        bottom: 385px;
+        left: 45%;
+        width: 30%;
+        @include card-transition;
     }
+    
     .about_pic {
         text-align: center;
     }
 
    .button_about1{
          img{
-            position: relative;
+            position:absolute;
             left: 30%;
-            top: 88px;
+            top: 30%;
         }
     }
 
     .button_about2{
         img{
-            position: relative;
+            position: absolute;
             left: 60%;
-            bottom: 4px;
+            top: 310px;
        }
     }
+
+    .button_about_left:hover .card1{
+            @include card-translate(410px,0)
+        }
+    .button_about_left:hover .button_about1,  .button_about_right:hover .button_about2{
+        
+            visibility: hidden;
+    }
+    .button_about_right:hover .card2{
+            @include card-translate(0,-90px)
+        }
+    
 }
