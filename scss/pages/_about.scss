@@ -1,4 +1,13 @@
 .explanation{
+    .card1{
+        box-shadow:  8px 8px 60px $mainShadowColor;
+        width: 30%;
+    }
+    .card2{
+        box-shadow:  8px 8px 60px $mainShadowColor;
+        width: 35%;
+        bottom: 385px;
+    }
     .about_pic {
         text-align: center;
     }
