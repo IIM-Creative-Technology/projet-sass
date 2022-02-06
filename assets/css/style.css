@@ -25,22 +25,24 @@ section {
   height: 85vh;
 }
 .explanation .card1 {
-  width: 25%;
+  width: 500px;
   position: absolute;
   opacity: 0;
   bottom: 60%;
   left: -300px;
   transition: transform 0.3s ease-out;
   z-index: 20;
+  pointer-events: none;
 }
 .explanation .card2 {
-  width: 35%;
+  width: 500px;
   position: absolute;
   opacity: 0;
   bottom: 0;
   left: 45%;
   transition: transform 0.3s ease-out;
   z-index: 20;
+  pointer-events: none;
 }
 .explanation .about_pic {
   text-align: center;
@@ -58,10 +60,6 @@ section {
 .explanation .button_about_left:hover .card1 {
   opacity: 1;
   transform: translate(410px, 0);
-}
-.explanation .button_about_left:hover .button_about1,
-.explanation .button_about_right:hover .button_about2 {
-  visibility: hidden;
 }
 .explanation .button_about_right:hover .card2 {
   opacity: 1;
@@ -85,6 +83,7 @@ section {
   left: -100vw;
   transition: transform 0.3s ease-out;
   z-index: 20;
+  pointer-events: none;
 }
 .zen-health .button_health:hover .card_health {
   opacity: 1;
@@ -179,6 +178,7 @@ section {
   left: -1000px;
   transition: transform 0.3s ease-out;
   z-index: 20;
+  pointer-events: none;
 }
 .zen-preamble .cta:hover .card {
   opacity: 1;
@@ -214,6 +214,7 @@ section {
   left: 65%;
   transition: transform 0.3s ease-out;
   z-index: 20;
+  pointer-events: none;
 }
 .participation .participation_card2 {
   width: 30%;
@@ -223,6 +224,7 @@ section {
   left: 65%;
   transition: transform 0.3s ease-out;
   z-index: 20;
+  pointer-events: none;
 }
 .participation .participation_card3 {
   width: 40%;
@@ -232,10 +234,7 @@ section {
   left: 50%;
   transition: transform 0.3s ease-out;
   z-index: 20;
-}
-.participation .button_participation_top:hover .button_participation1, .participation .button_participation_middle:hover .button_participation2,
-.participation .button_participation_bottom:hover .button_participation3 {
-  visibility: hidden;
+  pointer-events: none;
 }
 .participation .button_participation_top:hover .participation_card1 {
   opacity: 1;
@@ -248,6 +247,48 @@ section {
 .participation .button_participation_bottom:hover .participation_card3 {
   opacity: 1;
   transform: translate(0px, -180px);
+}
+
+.benefits {
+  position: relative;
+  margin: 0 auto;
+}
+.benefits .benefits_pics {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 0 auto;
+}
+.benefits .benefits_pic img {
+  position: absolute;
+  top: -40%;
+  opacity: 0;
+  transition: transform 0.3s ease-out;
+  z-index: 20;
+}
+.benefits .benefits_button {
+  top: -5%;
+  position: absolute;
+  z-index: 1;
+}
+.benefits .card {
+  width: 65%;
+  margin: 25px auto;
+}
+.benefits .benefits_hover1:hover .benefits_pic1 img {
+  opacity: 1;
+  transform: translate(0px, 80%);
+  opacity: 1;
+}
+.benefits .benefits_hover2:hover .benefits_pic2 img {
+  opacity: 1;
+  transform: translate(0px, 80%);
+  opacity: 1;
+}
+.benefits .benefits_hover3:hover .benefits_pic3 img {
+  opacity: 1;
+  transform: translate(0px, 80%);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,6 +22,7 @@
   left: $left;
   transition: transform 0.3s ease-out;
   z-index: $index;
+  pointer-events: none;
 }
 
 @mixin card-translate($x, $y) {

@@ -33,10 +33,7 @@
     .participation_card3{
         @include cta-card(-30%,50%,40%,20)
     }
-    .button_participation_top:hover .button_participation1, .button_participation_middle:hover .button_participation2,
-    .button_participation_bottom:hover .button_participation3{
-        visibility: hidden;
-    }
+   
     .button_participation_top:hover .participation_card1{
         @include card-translate(0,100px)
     }

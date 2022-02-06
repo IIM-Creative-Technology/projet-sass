@@ -2,10 +2,10 @@
   position: relative;
   height: 85vh;
   .card1 {
-      @include cta-card(60%,-300px,25%,20);
+      @include cta-card(60%,-300px,500px,20);
   }
   .card2 {
-    @include cta-card(0,45%,35%,20);
+    @include cta-card(0,45%,500px,20);
   }
 
   .about_pic {
@@ -31,10 +31,7 @@
   .button_about_left:hover .card1 {
     @include card-translate(410px, 0);
   }
-  .button_about_left:hover .button_about1,
-  .button_about_right:hover .button_about2 {
-    visibility: hidden;
-  }
+
   .button_about_right:hover .card2 {
     @include card-translate(0, -90px);
   }

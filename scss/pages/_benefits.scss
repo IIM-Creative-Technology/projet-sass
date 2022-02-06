@@ -1,0 +1,51 @@
+.benefits{
+    position: relative;
+    
+    margin: 0 auto;
+    .benefits_pics{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .benefits_pic{
+        
+        img{
+           position: absolute;
+           top: -40%;
+           @include card-opacity(0);
+           transition: transform 0.3s ease-out;
+           z-index: 20;
+        }
+    }
+    .benefits_button{
+        top: -5%;
+        position: absolute;
+        z-index: 1;
+    }
+    .card{
+       width: 65% ; 
+       margin: 25px auto;
+    }
+   
+    .benefits_hover1:hover .benefits_pic1{
+        img{
+            @include card-translate(0px,80%);
+            @include card-opacity(1);
+        }
+    }
+    .benefits_hover2:hover .benefits_pic2{
+        img{
+            @include card-translate(0px,80%);
+            @include card-opacity(1);
+        }
+     
+    }
+    .benefits_hover3:hover .benefits_pic3{
+        img{
+            @include card-translate(0px,80%);
+            @include card-opacity(1);
+        }
+     
+    }
+}
