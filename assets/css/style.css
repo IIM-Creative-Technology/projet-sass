@@ -175,4 +175,70 @@ section {
   transform: translate(800px, 0px);
 }
 
+.participation {
+  height: 90vh;
+}
+.participation .participation_pic {
+  text-align: center;
+}
+.participation h3 {
+  width: 30%;
+  height: 5vh;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Amaranth", sans-serif;
+}
+.participation .button_participation1 img {
+  position: absolute;
+  left: 60%;
+  bottom: -207%;
+}
+.participation .button_participation2 img {
+  position: absolute;
+  left: 66%;
+  bottom: -220%;
+}
+.participation .button_participation3 img {
+  position: absolute;
+  left: 65%;
+  bottom: -253%;
+}
+.participation .participation_card1 {
+  width: 30%;
+  left: 55%;
+  bottom: -200%;
+  transition: transform 0.3s ease-out;
+}
+.participation .participation_card2 {
+  width: 30%;
+  left: 65%;
+  bottom: -240%;
+  transition: transform 0.3s ease-out;
+}
+.participation .participation_card3 {
+  width: 40%;
+  left: 50%;
+  transition: transform 0.3s ease-out;
+}
+.participation .button_participation_top:hover .button_participation1, .participation .button_participation_middle:hover .button_participation2,
+.participation .button_participation_bottom:hover .button_participation3 {
+  visibility: hidden;
+}
+.participation .button_participation_top:hover .participation_card1 {
+  opacity: 1;
+  transform: translate(0, 100px);
+}
+.participation .button_participation_middle:hover .participation_card2 {
+  opacity: 1;
+  transform: translate(-150px, 0);
+}
+.participation .button_participation_bottom:hover .participation_card3 {
+  opacity: 1;
+  transform: translate(0px, -250px);
+}
+
 /*# sourceMappingURL=style.css.map */
