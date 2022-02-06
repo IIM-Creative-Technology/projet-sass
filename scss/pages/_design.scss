@@ -1,4 +1,5 @@
 .design-selection {
+  font-size: $content;
   .designC {
     max-width: 1000px;
     margin: 100px auto;
@@ -11,7 +12,7 @@
       margin: 20px 0;
       width: 300px;
       height: 400px;
-      background: red;
+      background: white;
       transform-style: preserve-3d;
       transform: perspective(2000px);
       transition: 1s;
@@ -32,7 +33,6 @@
         background-color: black;
         width: 100%;
         height: 100%;
-        border: 1px solid #000;
         box-sizing: border-box;
         transform-origin: left;
         z-index: 1;
@@ -54,6 +54,17 @@
         box-sizing: border-box;
         padding: 20px;
         color: #000;
+        text-align: center;
+
+        h2 {
+          margin: 0;
+          padding: 0.5em 0;
+          text-transform: uppercase;
+          font-size: 2em;
+          color: $titleColor;
+          font-family: $Amaranth;
+          text-shadow: 8px 8px 60px $textSadowColor;
+        }
       }
     }
   }
