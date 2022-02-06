@@ -66,5 +66,8 @@ body {
   margin: auto;
   text-align: center;
 }
+.zen-preamble .cta .card {
+  width: 500px;
+}
 
 /*# sourceMappingURL=style.css.map */
