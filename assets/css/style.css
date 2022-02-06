@@ -15,6 +15,10 @@ section {
 body {
   font-size: 18px;
 }
+body img {
+  width: 100%;
+  height: auto;
+}
 
 .zen_inro {
   display: grid;
@@ -62,12 +66,53 @@ body {
 }
 
 .zen-preamble .Img {
-  width: 500px;
+  width: 600px;
   margin: auto;
   text-align: center;
+  z-index: 1;
+}
+.zen-preamble .cta {
+  position: absolute;
+  bottom: 20vh;
+  left: 25vw;
+}
+.zen-preamble .cta .ctaButton circle {
+  stroke-width: 2px;
+  stroke-opacity: 1;
+}
+.zen-preamble .cta .ctaButton .pulse {
+  fill: white;
+  fill-opacity: 0;
+  transform-origin: 50% 50%;
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  from {
+    stroke-width: 3px;
+    stroke-opacity: 1;
+    transform: scale(0.3);
+  }
+  to {
+    stroke-width: 0;
+    stroke-opacity: 0;
+    transform: scale(1);
+  }
 }
 .zen-preamble .cta .card {
-  width: 500px;
+  position: absolute;
+  bottom: 0vh;
+  width: 400px;
+  left: -600px;
+  z-index: 20;
+  background-color: white;
+  opacity: 0;
+  transition: transform 0.3s ease-out;
+}
+.zen-preamble .cta:hover .card {
+  opacity: 1;
+  transform: translate(200px, 0px);
 }
 
 /*# sourceMappingURL=style.css.map */
