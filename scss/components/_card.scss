@@ -1,4 +1,4 @@
 .card {
-  @include card-padding(35px, 25px);
-  @include card-shadow(8px, 8px, 60px);
+  @include card-default(35px, 25px, 8px, 8px, 60px);
+  @include card-font($regular);
 }
