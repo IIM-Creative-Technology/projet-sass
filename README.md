@@ -11,10 +11,11 @@ The Zen Garden aims to excite, inspire, and encourage participation. To begin, v
 
 This project was carried out with the use of the following languages :
 
+![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
 ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-
+- Link to figma design `https://www.figma.com/file/l8AVm70jqPX8nc2jzOQtOu/SCSS?node-id=0%3A1`
 
 ## 📺 Getting Started
 
