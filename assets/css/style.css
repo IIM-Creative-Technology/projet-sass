@@ -1,3 +1,64 @@
+/*text color*/
+/*background color*/
+/* Shadows colors*/
+.card {
+  padding: 35px 25px;
+  box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
+}
 
+section {
+  height: 90vh;
+  position: relative;
+  margin: 10vh;
+}
+
+body {
+  font-size: 18px;
+}
+
+.zen_inro {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  gap: 0px 5px;
+  grid-template-areas: "title Img" "intro Img";
+}
+.zen_inro .title {
+  grid-area: title;
+}
+.zen_inro .title h1 {
+  margin-left: 4%;
+  font-family: "Amaranth", sans-serif;
+  font-size: 64px;
+  color: #455a64;
+  text-shadow: 8px 8px 60px rgba(5, 188, 166, 0.3);
+}
+.zen_inro .intro {
+  grid-area: intro;
+  width: 600px;
+  height: auto;
+}
+.zen_inro .intro .contents .downloadLinks {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.zen_inro .intro .contents .downloadLinks a {
+  text-decoration: none;
+  color: #09f0d4;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.zen_inro .intro .contents .downloadLinks a:hover {
+  color: #05BCA6;
+}
+.zen_inro .intro .contents .downloadLinks a i {
+  margin-left: 10px;
+}
+.zen_inro .Img {
+  grid-area: Img;
+}
 
 /*# sourceMappingURL=style.css.map */
