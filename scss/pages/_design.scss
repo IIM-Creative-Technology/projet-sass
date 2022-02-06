@@ -5,11 +5,11 @@
     margin: 100px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .design-card {
       position: relative;
-      margin: 20px 5px;
+      margin: 20px 0px;
       width: 260px;
       height: 400px;
       background: white;
