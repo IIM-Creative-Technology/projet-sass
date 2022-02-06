@@ -1,0 +1,48 @@
+
+ @mixin card-opacity($value) {
+  opacity: $value;
+}
+
+@mixin card-font($fontSize, $fontFamily, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-family: $fontFamily;
+}
+
+@mixin card-padding($topBottom, $leftRight) {
+  padding: $topBottom $leftRight;
+}
+
+@mixin card-position($pValue) {
+  position: $pValue;
+}
+
+@mixin card-shadow($x, $y, $blur) {
+  box-shadow: $x $y $blur $mainShadowColor;
+}
+
+@mixin card-translate($x, $y) {
+  @include card-opacity(1);
+  transform: translate($x, $y);
+}
+
+@mixin gap($topBottom, $leftRight) {
+  gap: $topBottom $leftRight;
+}
+
+@mixin grid($top, $bottom, $left, $right) {
+  display: grid;
+  @include card-shadow(10px, 8px);
+}
+
+@mixin section($sectionHeight, $sectionPosition ) {
+  height : $sectionHeight;
+  position: $sectionPosition;
+}
+
+@mixin main-title($fontFamily, $x, $y, $blur) {
+  font-family: $fontFamily;
+  font-size: $title;
+  color: $titleColor;
+  text-shadow: $x $y $blur $textSadowColor;
+}

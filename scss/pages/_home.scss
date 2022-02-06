@@ -1,0 +1,35 @@
+.zen_inro {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  @include gap(0px, 5px,);
+  grid-template-areas:
+    'title Img'
+    'intro Img';
+
+  .title {
+    grid-area: title;
+    h1{
+      margin-left: 4%;
+      @include main-title($Amaranth, 8px, 8px, 60px);
+    }
+  }
+  .intro {
+    grid-area: intro;
+    width: 600px;
+    height: auto;
+
+    .downloadLinks{
+      a{
+        text-decoration: none;
+        margin-right: 35px;  
+      }
+    }
+  }
+  
+  .Img {
+    grid-area: Img;
+  }
+}
+
+
