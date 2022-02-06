@@ -9,7 +9,7 @@
 section {
   height: 90vh;
   position: relative;
-  margin: 10vh;
+  margin: 10vw;
 }
 
 body {
@@ -59,6 +59,12 @@ body {
 }
 .zen_inro .Img {
   grid-area: Img;
+}
+
+.zen-preamble .Img {
+  width: 500px;
+  margin: auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
