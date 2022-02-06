@@ -1,0 +1,46 @@
+.participation{
+    height: 90vh;
+    .participation_pic{
+        text-align: center;
+    }
+    .button_participation1{
+        img{
+           position: absolute;
+           left: 65%;
+           bottom: 75%;
+       }
+   }
+   .button_participation2{
+        img{
+        position:absolute;
+        left: 70%;
+        bottom: 58%;
+        }
+    }
+    .button_participation3{
+        img{
+            position: absolute;
+           left: 68%;
+           bottom: 15%;
+       }
+    }
+    .participation_card1{
+        @include cta-card(80%,65%,30%,20)
+    }
+    .participation_card2{
+        @include cta-card(30%,65%,30%,20)
+    }
+    .participation_card3{
+        @include cta-card(-30%,50%,40%,20)
+    }
+   
+    .button_participation_top:hover .participation_card1{
+        @include card-translate(0,100px)
+    }
+    .button_participation_middle:hover .participation_card2{
+        @include card-translate(-150px,0)
+    }
+    .button_participation_bottom:hover .participation_card3{
+        @include card-translate(0px,-180px)
+    }
+}
