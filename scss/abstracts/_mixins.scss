@@ -1,5 +1,4 @@
-
- @mixin card-opacity($value) {
+@mixin card-opacity($value) {
   opacity: $value;
 }
 
@@ -52,4 +51,7 @@
   font-size: $title;
   color: $titleColor;
   text-shadow: $x $y $blur $textSadowColor;
+}
+@mixin card-transition {
+    transition: transform .3s ease-out;
 }
