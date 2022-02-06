@@ -2,7 +2,7 @@
 /*background color*/
 /* Shadows colors*/
 .card {
-  padding: 10px 20px;
+  padding: 35px 25px;
   box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
 }
 
@@ -10,6 +10,10 @@ section {
   height: 90vh;
   position: relative;
   margin: 10vh;
+}
+
+body {
+  font-size: 18px;
 }
 
 .zen_inro {
@@ -34,9 +38,24 @@ section {
   width: 600px;
   height: auto;
 }
-.zen_inro .intro .downloadLinks a {
+.zen_inro .intro .contents .downloadLinks {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.zen_inro .intro .contents .downloadLinks a {
   text-decoration: none;
-  margin-right: 35px;
+  color: #09f0d4;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.zen_inro .intro .contents .downloadLinks a:hover {
+  color: #05BCA6;
+}
+.zen_inro .intro .contents .downloadLinks a i {
+  margin-left: 10px;
 }
 .zen_inro .Img {
   grid-area: Img;

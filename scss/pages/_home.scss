@@ -1,3 +1,7 @@
+body{
+  font-size: $content;
+}
+
 .zen_inro {
   display: grid;
   grid-template-columns: minmax(100px, auto) 1fr;
@@ -19,12 +23,34 @@
     width: 600px;
     height: auto;
 
-    .downloadLinks{
-      a{
-        text-decoration: none;
-        margin-right: 35px;  
+    .contents{  
+
+  
+
+      .downloadLinks{
+
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        a{
+          text-decoration: none;
+          color: $LinkColor;
+          text-transform: uppercase;
+          font-family: $OpenSans;
+          font-weight: $semiBold;
+          font-size: $content;
+  
+        &:hover{
+          color: $LinkHoverColor;
+        }
+  
+          i{
+            margin-left: 10px;
+          }
+        }
       }
     }
+    
   }
   
   .Img {
