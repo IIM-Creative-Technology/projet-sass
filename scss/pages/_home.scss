@@ -1,0 +1,102 @@
+.zen_inro {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  @include gap(0px, 5px);
+  grid-template-areas:
+    'title Img'
+    'intro Img';
+
+  .title {
+    grid-area: title;
+    h1 {
+      margin-left: 4%;
+      @include main-title($Amaranth, 8px, 8px, 60px);
+    }
+  }
+  .intro {
+    grid-area: intro;
+    width: 600px;
+    height: auto;
+
+    .contents {
+      .downloadLinks {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: $LinkColor;
+          text-transform: uppercase;
+          font-family: $OpenSans;
+          font-weight: $semiBold;
+          font-size: $content;
+
+          &:hover {
+            color: $LinkHoverColor;
+          }
+
+          i {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .Img {
+    grid-area: Img;
+  }
+}
+
+.zen-preamble {
+  .Img {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .cta {
+    position: absolute;
+    bottom: 20vh;
+    left: 25vw;
+
+    .ctaButton {
+      circle {
+        stroke-width: 2px;
+        stroke-opacity: 1;
+      }
+
+      .pulse {
+        fill: white;
+        fill-opacity: 0;
+        transform-origin: 50% 50%;
+        animation-duration: 2s;
+        animation-name: pulse;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes pulse {
+        from {
+          stroke-width: 3px;
+          stroke-opacity: 1;
+          transform: scale(0.3);
+        }
+        to {
+          stroke-width: 0;
+          stroke-opacity: 0;
+          transform: scale(1);
+        }
+      }
+    }
+    .card {
+      @include cta-card(0px, -1000px, 400px, 20);
+    }
+
+    &:hover .card {
+      opacity: 1;
+      transform: translate(800px, 0px);
+    }
+  }
+}

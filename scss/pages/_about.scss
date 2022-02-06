@@ -1,46 +1,43 @@
-.explanation{
-    position: relative;
-    height: 85vh;
-    .card1{
-        width: 25%;
-        left: -300px;
-        @include card-transition;
-    }
-    .card2{
-        left: 45%;
-        width: 30%;
-        @include card-transition;
-    }
-    
-    .about_pic {
-        text-align: center;
-    }
+.explanation {
+  position: relative;
+  height: 85vh;
+  .card1 {
+    width: 25%;
+    left: -300px;
+  }
+  .card2 {
+    left: 45%;
+    width: 30%;
+  }
 
-   .button_about1{
-         img{
-            position:absolute;
-            left: 30%;
-            top: 10%;
-        }
-    }
+  .about_pic {
+    text-align: center;
+  }
 
-    .button_about2{
-        img{
-            position: absolute;
-            left: 60%;
-            top: 310px;
-       }
+  .button_about1 {
+    img {
+      position: absolute;
+      left: 30%;
+      top: 10%;
     }
+  }
 
-    .button_about_left:hover .card1{
-            @include card-translate(410px,0)
-        }
-    .button_about_left:hover .button_about1,  .button_about_right:hover .button_about2{
-        
-            visibility: hidden;
+  .button_about2 {
+    img {
+      position: absolute;
+      left: 60%;
+      top: 310px;
     }
-    .button_about_right:hover .card2{
-            @include card-translate(0,-90px)
-        }
-    
+  }
+
+  .button_about_left:hover .card1 {
+    @include card-translate(410px, 0);
+  }
+  .button_about_left:hover .button_about1,
+  .button_about_right:hover .button_about2 {
+    visibility: hidden;
+  }
+  .button_about_right:hover .card2 {
+    @include card-translate(0, -90px);
+  }
 }

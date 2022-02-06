@@ -1,24 +1,9 @@
-   @import
-  'abstracts/colors.scss',
-  'abstracts/variables',
-  'abstracts/mixins';
+@import 'abstracts/colors.scss', 'abstracts/variables', 'abstracts/mixins';
 
+@import 'base/reset', 'base/typo';
 
-  @import
-  'base/reset',
-  'base/typo';
+@import 'layout/navigation', 'layout/grid', 'layout/header', 'layout/footer';
 
-  @import
-  'layout/navigation',
-  'layout/grid',
-  'layout/header',
-  'layout/footer';
+@import 'components/buttons', 'components/card', 'components/section';
 
-  @import
-  'components/buttons',
-  'components/card';
-
-  @import
-  'pages/about',
-  'pages/health',
-  'pages/participation';
+@import 'pages/about', 'pages/health', 'pages/home', 'pages/participation';

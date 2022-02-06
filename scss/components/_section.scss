@@ -1,0 +1,4 @@
+section{
+  @include section($sectionHeight, $sectionPosition);
+  margin: 10vw;
+}
