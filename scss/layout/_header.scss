@@ -1,0 +1,112 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: visible;
+  padding: 1rem;
+  z-index: 200;
+
+  .menu-toggle {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
+    position: relative;
+    cursor: pointer;
+    width: 28px;
+    height: 22px;
+    z-index: 100;
+
+    &:before {
+      content: '×';
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 2.4rem;
+      line-height: 0.4;
+      color: darken($LinkColor, 20%);
+      z-index: 2;
+      opacity: 0;
+      transition: opacity $ts ease;
+    }
+
+    span {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: darken($LinkColor, 20%);
+      border-radius: 2px;
+      transition: transform $ts ease;
+      transform-origin: 100% 100%;
+
+      @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+          transition-delay: $ts + ($td * $i);
+        }
+      }
+
+      &:nth-child(1),
+      &:nth-child(2) {
+        grid-column: span 3;
+      }
+
+      &:nth-child(3),
+      &:nth-child(6) {
+        grid-column: span 2;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        grid-column: span 4;
+      }
+    }
+  }
+
+  #menu-toggle-input {
+    display: none;
+
+    &:checked ~ .menu-toggle {
+      span {
+        transform: scaleX(0);
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}) {
+            transition-delay: $td * $i;
+          }
+        }
+      }
+
+      &:before {
+        opacity: 1;
+        transition-delay: $ts * 2.5;
+      }
+    }
+
+    &:checked ~ nav {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: 0s;
+
+      a {
+        color: white;
+        transform: translate(0, 0);
+      }
+
+      @for $i from 1 through 5 {
+        > ol > li:nth-child(#{$i}) > a {
+          transition: color $ts ($ts * 2.75),
+            transform $ts ($ts + $td * $i) ease;
+        }
+
+        .sub-menu > li:nth-child(#{$i}) > a {
+          transition: color $ts ($ts * 2.75),
+            transform $ts ($ts * 1.5 + $td * $i) ease;
+        }
+      }
+    }
+  }
+}
