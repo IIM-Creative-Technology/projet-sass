@@ -2,118 +2,77 @@
 /*background color*/
 /* Shadows colors*/
 .card {
-  padding: 35px 25px;
-  box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
-}
-
-section {
-  height: 90vh;
-  position: relative;
-  margin: 10vw;
-}
-
-body {
   font-size: 18px;
+  font-weight: 400;
   font-family: "Open Sans", sans-serif;
-}
-body img {
-  width: 100%;
-  height: auto;
-}
-
-.zen_inro {
-  display: grid;
-  grid-template-columns: minmax(100px, auto) 1fr;
-  grid-template-rows: 0.3fr 1fr;
-  gap: 0px 5px;
-  grid-template-areas: "title Img" "intro Img";
-}
-.zen_inro .title {
-  grid-area: title;
-}
-.zen_inro .title h1 {
-  margin-left: 4%;
-  font-family: "Amaranth", sans-serif;
-  font-size: 64px;
-  color: #455a64;
-  text-shadow: 8px 8px 60px rgba(5, 188, 166, 0.3);
-}
-.zen_inro .intro {
-  grid-area: intro;
-  width: 600px;
-  height: auto;
-}
-.zen_inro .intro .contents .downloadLinks {
-  width: 300px;
-  display: flex;
-  justify-content: space-between;
-}
-.zen_inro .intro .contents .downloadLinks a {
-  text-decoration: none;
-  color: #09f0d4;
-  text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-.zen_inro .intro .contents .downloadLinks a:hover {
-  color: #05BCA6;
-}
-.zen_inro .intro .contents .downloadLinks a i {
-  margin-left: 10px;
-}
-.zen_inro .Img {
-  grid-area: Img;
-}
-
-.zen-preamble .Img {
-  width: 600px;
-  margin: auto;
-  text-align: center;
-  z-index: 1;
-}
-.zen-preamble .cta {
-  position: absolute;
-  bottom: 20vh;
-  left: 25vw;
-}
-.zen-preamble .cta .ctaButton circle {
-  stroke-width: 2px;
-  stroke-opacity: 1;
-}
-.zen-preamble .cta .ctaButton .pulse {
-  fill: white;
-  fill-opacity: 0;
-  transform-origin: 50% 50%;
-  animation-duration: 2s;
-  animation-name: pulse;
-  animation-iteration-count: infinite;
-}
-@keyframes pulse {
-  from {
-    stroke-width: 3px;
-    stroke-opacity: 1;
-    transform: scale(0.3);
-  }
-  to {
-    stroke-width: 0;
-    stroke-opacity: 0;
-    transform: scale(1);
-  }
-}
-.zen-preamble .cta .card {
-  position: absolute;
-  bottom: 0vh;
-  width: 400px;
-  left: -600px;
-  z-index: 20;
-  background-color: white;
   opacity: 0;
+  padding: 30px 30px;
+  position: absolute;
+  box-shadow: 8px 8px 60px rgba(5, 188, 166, 0.13);
+  background-color: #fff;
+}
+
+.explanation {
+  position: relative;
+  height: 85vh;
+}
+.explanation .card1 {
+  width: 25%;
+  left: -300px;
   transition: transform 0.3s ease-out;
 }
-.zen-preamble .cta:hover .card {
+.explanation .card2 {
+  left: 45%;
+  width: 30%;
+  transition: transform 0.3s ease-out;
+}
+.explanation .about_pic {
+  text-align: center;
+}
+.explanation .button_about1 img {
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+.explanation .button_about2 img {
+  position: absolute;
+  left: 60%;
+  top: 310px;
+}
+.explanation .button_about_left:hover .card1 {
   opacity: 1;
-  transform: translate(200px, 0px);
+  transform: translate(410px, 0);
+}
+.explanation .button_about_left:hover .button_about1, .explanation .button_about_right:hover .button_about2 {
+  visibility: hidden;
+}
+.explanation .button_about_right:hover .card2 {
+  opacity: 1;
+  transform: translate(0, -90px);
+}
+
+.zen-health {
+  height: 105vh;
+}
+.zen-health .health_pic {
+  text-align: center;
+}
+.zen-health .button_health img {
+  position: absolute;
+  left: 56%;
+  bottom: -120%;
+}
+.zen-health .card_health {
+  width: 30%;
+  top: 200%;
+  transition: transform 0.3s ease-out;
+}
+.zen-health .health:hover .button_health {
+  visibility: hidden;
+}
+.zen-health .health:hover .card_health {
+  opacity: 1;
+  transform: translate(400px, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

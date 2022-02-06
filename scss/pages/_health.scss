@@ -1,0 +1,25 @@
+.zen-health{
+    height: 105vh;
+    .health_pic {
+        text-align: center;
+    }
+    .button_health{
+        img{
+            position: absolute;
+            left: 56%;
+            bottom: -120%;
+       }
+    }
+    .card_health{
+       width: 30%;
+       top: 200%;
+       @include card-transition;
+    }
+
+    .health:hover .button_health{
+        visibility: hidden;
+    }
+    .health:hover .card_health{
+        @include card-translate(400px,0)
+    }
+}
